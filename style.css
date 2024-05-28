@@ -8,6 +8,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .calculator {
   background-color: #000000c4;
   border-radius: 20px;
