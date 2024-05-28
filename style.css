@@ -25,14 +25,15 @@ body {
 #display {
   width: 100%;
   flex: 0 0 15%; 
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   text-align: right;
-  font-size: 1.5em; 
-  padding: 10px;
+  font-size: 2em; 
+  padding: 50px;
   box-sizing: border-box;
   border: none;
   border-radius: 5px;
-  background-color: #f0f0f0;
+  background-color: #000000;
+  color: #f0f0f0;
 }
 
 .buttons {
@@ -43,17 +44,18 @@ body {
 }
 
 button {
-  width: 100%;
-  height: 100%; 
+  width: 70px;
+  height: 70px; 
   font-size: 1.2em; 
   border: none;
   border-radius: 5px;
-  background-color: #dcdcdc;
+  color: #f0f0f0;
+  background-color: #000000;
   transition: background-color 0.2s;
 }
 
 button:hover {
-  background-color: #c0c0c0;
+  background-color: #25e7e7;
 }
 
 button.zero {
@@ -61,7 +63,7 @@ button.zero {
 }
 
 button:active {
-  background-color: #a0a0a0;
+  background-color: #ff0000;
 }
 
 
