@@ -1,63 +1,80 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-image: url('kal.jpg');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('kal.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background-color: #f3a3a3;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px; 
+  width: 90%;
+  max-width: 400px;
+}
+
+#display {
+  width: 100%;
+  height: 50px; 
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 1.5em; 
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  font-size: 1.2em; 
+  border: none;
+  border-radius: 5px;
+  background-color: #dcdcdc;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #c0c0c0;
+}
+
+button.zero {
+  grid-column: span 2;
+}
+
+button:active {
+  background-color: #a0a0a0;
+}
+
+
+@media (max-width: 600px) {
   .calculator {
-    background-color: #f3a3a3;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    width: 200%;
-    max-width: 400px;
+      padding: 10px;
+      width: 100%; 
   }
-  
+
   #display {
-    width: 100%;
-    height: 60px;
-    margin-bottom: 10px;
-    text-align: right;
-    font-size: 2em;
-    padding: 10px;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 5px;
-    background-color: #f0f0f0;
+      height: 40px; 
+      font-size: 1.2em; 
   }
-  
-  .buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-  }
-  
+
   button {
-    width: 100%;
-    height: 60px;
-    font-size: 1.5em;
-    border: none;
-    border-radius: 5px;
-    background-color: #dcdcdc;
-    transition: background-color 0.2s;
+      height: 40px; 
+      font-size: 1em;
   }
-  
-  button:hover {
-    background-color: #c0c0c0;
-  }
-  
-  button.zero {
-    grid-column: span 2;
-  }
-  
-  button:active {
-    background-color: #a0a0a0;
-  }
-  
+}
